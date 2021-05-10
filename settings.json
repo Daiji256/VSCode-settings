@@ -1,0 +1,160 @@
+{
+	// tab & space
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "all",
+	"editor.renderControlCharacters": true,
+	"editor.tabSize": 4,
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"[markdown]": {
+		"files.trimTrailingWhitespace": false,
+		"editor.insertSpaces" : true,
+		"editor.tabSize": 2
+	},
+	"markdown.preview.fontFamily": "'Harano Aji Gothic', 'LM Sans 10', sans-serif",
+
+	"[scss]": {
+		"editor.insertSpaces" : true,
+		"editor.tabSize": 2
+	},
+	"[css]": {
+		"editor.insertSpaces" : true,
+		"editor.tabSize": 2
+	},
+	"[html]": {
+		"editor.insertSpaces" : true,
+		"editor.tabSize": 2
+	},
+
+	// cls
+	"[tex]": {
+		"editor.insertSpaces" : true,
+		"editor.tabSize": 2
+	},
+
+	// python
+	"[python]": {
+		"editor.insertSpaces" : true
+	},
+	"python.autoComplete.addBrackets": true,
+	//"python.linting.pylintArgs": [
+	//	"--extension-pkg-whitelist=cv2",
+	//	"--generate-rcfile"
+	//],
+
+	// icon
+	"workbench.iconTheme": "vscode-icons",
+
+	// latex
+	"latex-workshop.message.update.show": false,
+	"latex-workshop.latex.tools": [
+		{
+			"name": "lualatex",
+			"command": "lualatex",
+			"args": [
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"--cmdx",
+				"--fmt=lualatex.fmt",
+				"%DOCFILE%"
+			]
+		},
+		{
+			"name": "uplatex",
+			"command": "ptex2pdf",
+			"args": [
+				"-l",
+				"-u",
+				"-ot",
+				"-kanji=utf8 -synctex=1",
+				"%DOC%"
+			]
+		},
+		{
+			"name": "platex",
+			"command": "ptex2pdf",
+			"args": [
+				"-l",
+				"-ot",
+				"-kanji=utf8 -synctex=1",
+				"%DOC%"
+			]
+		},
+		{
+			"name": "upbibtex",
+			"command": "upbibtex",
+			"args": [
+				"%DOCFILE%"
+			]
+		},
+	],
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "lualatex",
+			"tools": [
+				"lualatex",
+				"lualatex",
+				"lualatex"
+			]
+		}
+	],
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.latex.clean.fileTypes": [
+		"*.aux",
+		"*.log",
+		"*.synctex.gz",
+		"*.nav",
+		"*.out",
+		"*.snm",
+		"*.toc",
+		"*.bbl",
+		"*.blg"
+	],
+	"latex-workshop.latex.autoClean.run": "onBuilt",
+
+	// vim
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.hlsearch": true,
+	"explorer.confirmDelete": false,
+	"editor.fontFamily": "Ricty Diminished",
+	"editor.fontSize": 15,
+	"explorer.sortOrder": "type",
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.colorTheme": "GitHub Dark Dimmed",
+	"[dart]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.rulers": [
+			80
+		],
+		"editor.selectionHighlight": false,
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": false
+	},
+	"remote.SSH.remotePlatform": {
+		"192.168.3.10": "linux",
+		"192.168.3.20": "linux"
+	},
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"dart.flutterCreateAndroidLanguage": "java",
+	"files.associations": {
+		"iostream": "cpp",
+		"ostream": "cpp",
+		"random": "cpp"
+	},
+	"workbench.editorAssociations": [
+		{
+			"viewType": "jupyter.notebook.ipynb",
+			"filenamePattern": "*.ipynb"
+		}
+	],
+}
