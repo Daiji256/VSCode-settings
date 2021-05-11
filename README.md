@@ -1,11 +1,11 @@
 # VS Code のオレオレ設定
 
-## settings
+## Settings
 
 1. `Ctrl` + `,` で Settings を開く．
 2. 右上の Open Settings (JSON) を押して `settings.json` を開く．
 
-## keybindings
+## Keybindings
 
 1. `Ctrl` + `k`，`Ctrl` + `s` でキーボードショートカットを開く．
 2. 右上の Open Keyboard Shortcuts (JSON) を押して `keybindings.json` を開く．
